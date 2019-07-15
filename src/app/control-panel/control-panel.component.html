@@ -1,0 +1,32 @@
+<div class="format-actions">
+  <button
+    class="format-action"
+    (click)="textService.toggleAction('bold')"
+    type="button">
+    <b>B</b>
+  </button>
+  <button
+    class="format-action"
+    (click)="textService.toggleAction('italic')"
+    type="button">
+    <i>I</i>
+  </button>
+  <button
+    class="format-action"
+    (click)="textService.toggleAction('underline')"
+    type="button">
+    <u>U</u>
+  </button>
+  <button
+    class="format-action"
+    (click)="textService.changeColor()"
+    type="button">
+    <fa-icon [icon]="['fa', 'tint']"></fa-icon>
+  </button>
+  <button
+    class="format-action"
+    (click)="textService.toggleAction('indent')"
+    type="button">
+    <fa-icon [icon]="['fa', 'indent']"></fa-icon>
+  </button>
+</div>

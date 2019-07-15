@@ -1,0 +1,9 @@
+<div class="file" (dblclick)="fetchSynonyms()" (click)="emptySynonyms()" contenteditable>
+  {{text$ | async}}
+</div>
+<div class="synonyms" *ngIf="synonyms.length > 0">
+  <h3>Synonyms:</h3>
+  <div *ngFor="let synonym of synonyms">
+    <div class="synonym" (click)="replaceSelectedText(synonym.word)">{{synonym.word}}</div>
+  </div>
+</div>
